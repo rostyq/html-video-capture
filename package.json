@@ -1,0 +1,32 @@
+{
+  "name": "html-video-capture",
+  "description": "Library for raw capture from `HTMLVideoElement` using Canvas 2D or WebGL.",
+  "license": "ISC",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/html-video-capture.umd.cjs",
+  "module": "./dist/html-video-capture.js",
+  "types": "./dist/html-video-capture.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/html-video-capture.js",
+      "require": "./dist/html-video-capture.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "rvfc-polyfill": "^1.0.4",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-glsl": "^1.0.2"
+  }
+}
